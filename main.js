@@ -8,7 +8,7 @@ import layout from "./layout.js";
 function server(request) {
     const url = new URL(request.url);
     console.log(url.pathname);
-    const ctx = { request, url, layout };
+    const ctx = { request, url, layout, data: {} };
     
     if (url.pathname.startsWith("/assets/")) {        
         return staticController(ctx);
