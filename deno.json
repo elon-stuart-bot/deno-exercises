@@ -1,5 +1,6 @@
 {
     "tasks": {
-        "serve": "deno --allow-net main.js"
+        "serve": "deno --allow-net main.js",
+        "dev": "deno --watch --allow-net main.js"
     }
 }
