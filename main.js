@@ -1,5 +1,6 @@
 function server() { 
-    return new Response("<h1>hello world</h1>");
+    const headers = new Headers({ "content-type": "text/html" }); 
+    return new Response("<h1>hello world</h1>", { headers });
 }
 
 Deno.serve(server);
