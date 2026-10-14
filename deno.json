@@ -1,0 +1,5 @@
+{
+    "tasks": {
+        "serve": "deno --allow-net main.js"
+    }
+}
