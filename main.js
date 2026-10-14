@@ -1,5 +1,5 @@
 function server() { 
-    return new Response();
+    return new Response("hello world");
 }
 
 Deno.serve(server);
